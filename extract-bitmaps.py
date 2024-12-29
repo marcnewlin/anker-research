@@ -40,7 +40,7 @@ for _offset in offsets:
   offset = _offset - 0x2000
 
   # look for up to 100 contiguous images starting at this address
-  for x in range(10):
+  for x in range(100):
     bpp = 2
     width = data[offset+0]
     height = data[offset+1]
