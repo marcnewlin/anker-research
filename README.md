@@ -1,3 +1,17 @@
+# Overview
+
+This repository contains PoC code and logs/notes related to my research into the Anker A1340 power bank.
+
+Vulnerabilities in the BLE protocol and DFU mechanism can be exploited to push malicious firmware images to the Telink BLE SoC and GD32 MCU.
+
+## Disclosure Timeline
+
+- January 2025 - disclosed the bugs to Anker
+- May 2025 - Anker completed the fix, adding an ECDSA signature to the DFU process, and introducing a PKI-authenticated variant of the BLE protocol
+- August 2025 - public disclosure to add to the parallel-discovery corpus: https://github.com/atc1441/Anker_Prime_BLE_hacking
+
+## Files
+
 ble_types.py
 - BLE command codes and command packing/parsing logic
 
